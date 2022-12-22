@@ -4,8 +4,8 @@
     <mrRef RefPosition="head" RefType="meta" charset="UTF-8"></mrRef>
     <mrRef RefPosition="head" RefType="meta" name="viewport" content="width=device-width, initial-scale=1.0"></mrRef>
     <mrRef RefPosition="head" RefType="meta" http-equiv="X-UA-Compatible" content="ie=edge"></mrRef>
-    <mrRef RefPosition="head" RefType="link" rel="stylesheet" type="text/css" href="https://images3.ipsosinteractive.com/images/Colombia/public/css/materialize.css"></mrRef>    
-    <mrRef RefPosition="head" RefType="link" rel="stylesheet" type="text/css" href="https://images3.ipsosinteractive.com/images/Colombia/public/css/nouislider.min.css"></mrRef>    
+    <mrRef RefPosition="head" RefType="link" rel="stylesheet" type="text/css" href="public/css/materialize.css"></mrRef>
+    <mrRef RefPosition="head" RefType="link" rel="stylesheet" type="text/css" href="public/css/nouislider.min.css"></mrRef>
     <mrRef RefPosition="head" RefType="link" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons"></mrRef>
 </head>
 
@@ -15,42 +15,43 @@
 
     <div class="main">
         <div class="navbar-fixed navbar z-depth-3">
-				<nav class="">
-					<div class="nav-wrapper">
-						<div class="company-logo left valign-wrapper">
-                                <mrRef RefType="img"  src="https://images1.ipsosinteractive.com/images/Colombia/icon-ipsos.svg"
-                                alt="logo-terpel"></mrRef>
-						</div>
-						<div class="right nav-buttons">
-							<ul class="">
-								<li><a href="#" id="btnPrev" class="waves-effect ">
+            <nav class="">
+                <div class="nav-wrapper">
+                    <div class="company-logo left valign-wrapper">
+                        <mrRef RefType="img" src="https://images1.ipsosinteractive.com/images/Colombia/icon-ipsos.svg" alt="logo-terpel"></mrRef>
+                    </div>
+                    <div class="right nav-buttons">
+                        <ul class="">
+                            <li>
+                                <a href="#" id="btnPrev" class="waves-effect ">
                                     <i class="material-icons large">navigate_before
                                         <mrNavButton Name="Prev" Text="" />
                                     </i></a>
-                                </li>
-								<li><a href="#" id="btnStop" class="waves-effect"><i class="material-icons large">pause
+                            </li>
+                            <li><a href="#" id="btnStop" class="waves-effect"><i class="material-icons large">pause
                                     <mrNavButton Name="Stop" Text="" />
                                 </i></a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <div class="content">
             <mrBannerText></mrBannerText>
             <mrData></mrData>
         </div>
         <div id="btnNext" class="btn-next waves-effect z-depth-4 disabled">
-            <a href="#" class="white-text"><mrNavButton Name="Next" Text="" ></mrNavButton>SIGUIENTE</a>  
+            <a href="#" class="white-text">
+                <mrNavButton Name="Next" Text=""></mrNavButton>SIGUIENTE</a>
         </div>
 
     </div>
 
-    <mrRef RefType="script" RefPosition="head" type="text/javascript" src="https://images3.ipsosinteractive.com/images/Colombia/public/js/bin/materialize.js">Text</mrRef>
-    <mrRef RefType="script" RefPosition="head" type="text/javascript" src="https://images3.ipsosinteractive.com/images/Colombia/public/js/bin/init.js">Text</mrRef>
-    <mrRef RefType="script" RefPosition="head" type="text/javascript" src="https://images3.ipsosinteractive.com/images/Colombia/public/js/bin/video.js">Text</mrRef>
-    <mrRef RefType="script"  RefPosition="head" type="text/javascript" src="https://images3.ipsosinteractive.com/images/Colombia/public/js/bin/closeness.js">Text</mrRef>
-    
+    <mrRef RefType="script" RefPosition="head" type="text/javascript" src="public/js/bin/materialize.js">Text</mrRef>
+    <mrRef RefType="script" RefPosition="head" type="text/javascript" src="public/js/bin/init.js">Text</mrRef>
+    <mrRef RefType="script" RefPosition="head" type="text/javascript" src="public/js/bin/video.js">Text</mrRef>
+    <mrRef RefType="script" RefPosition="head" type="text/javascript" src="public/js/bin/closeness.js">Text</mrRef>
+
 </body>
 
 </html>
