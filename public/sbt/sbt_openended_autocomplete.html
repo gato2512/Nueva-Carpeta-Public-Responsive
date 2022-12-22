@@ -1,0 +1,45 @@
+<mrSubTemplate>
+        <div class="container">
+            <div class="card hoverable"> 
+                <div class="card-action">
+                    <mrData QuestionElement='Error' ShowErrors='TopMost' Class="topmosterrors">The Top Errors</mrData>
+                    <div class="input-field" id="inputFieldAutoComplete">
+                        <i class="material-icons prefix">textsms</i>
+                        <mrData QuestionElement="Controls"/>
+                        <mrData QuestionElement="Label"/> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" >
+            document.addEventListener('DOMContentLoaded', function() {
+                var input = document.getElementById("inputFieldAutoComplete").getElementsByTagName("input")[0]
+                input.classList.add("autocomplete")
+                var autocom = document.querySelectorAll('.autocomplete');
+                input.autocomplete = true
+                Autocomplete = M.Autocomplete.init(autocom, {
+                    data: {
+                        "CABLE NOTICIAS": null,
+                        "CANAL 13": null,
+                        "CANAL CAPITAL": null,
+                        "CANAL CARACOL": null,
+                        "CANAL INSTITUCIONAL": null,
+                        "CANAL RCN": null,
+                        "CANAL UNO": null,
+                        "CANAL VALLENATO": null,
+                        "CITY TV": null,
+                        "CLARO SPORTS COLOMBIA": null,
+                        "EL TIEMPO TELEVISION": null,
+                        "RADIOLA TV": null,
+                        "SEÑAL COLOMBIA": null,
+                        "TELEAMIGA": null,
+                        "TELEANTIOQUIA": null,
+                        "TELECAFE": null,
+                        "TELECARIBE": null,
+                        "TELEPACIFICO": null,
+                        "WIN SPORTS": null
+                    }
+                });
+            });
+        </script>
+</mrSubTemplate>

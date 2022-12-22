@@ -1,0 +1,57 @@
+<mrSubTemplate>
+        <style>
+                label{
+                    color: inherit !important;
+                }   
+                .mrQuestionText{
+                    color: inherit;
+                }
+                .mrEdit{
+                    margin-left: 0 !important;
+                } 
+        </style>
+            <div class="container">
+                <div class="card hoverable"> 
+                    <div class="card-content">
+                        <mrData QuestionElement="Label"/> 
+                    </div>
+                    <div class="card-action">
+                        <mrData QuestionElement='Error'>The Top Errors</mrData>
+                        <div class="input-field">
+                            <mrData QuestionElement="Controls"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <script>
+            var inputField = document.getElementsByClassName("input-field")[0];
+            var mrEdit = inputField.getElementsByClassName("mrEdit")[0]
+            var PlaceHolder = "Ingrese aquí la fecha"
+            var months = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+            var monthsShort = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"]
+            var weekdays =  ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"]
+            var weekdaysShort = ["Dom",	"Lun",	"Mar",	"Mie",	"Jue",	"Vie",	"Sab"]
+            var weekdaysAbbrev	= ['D','L','M','X','J','V','S']
+            
+            mrEdit.classList.add("datepicker");
+            mrEdit.setAttribute("placeholder",PlaceHolder)
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.datepicker');
+                var DatePicker = M.Datepicker.init(elems, {
+                    format: "dd/mm/yyyy",
+                    yearRange:[1900,2019],
+                    i18n: { 
+                        months: months,
+                        monthsShort: monthsShort,
+                        weekdays:weekdays,
+                        weekdaysShort:weekdaysShort,
+                        weekdaysAbbrev:weekdaysAbbrev,
+                        cancel: "Cancelar",
+                        done: "Aceptar"
+                    }
+                });
+            })
+        </script>
+</mrSubTemplate>
